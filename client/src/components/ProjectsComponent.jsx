@@ -53,7 +53,7 @@ const ProjectsComponent = () => {
               >
                 <div className="flex-1">
                   <img
-                    src={urlFor(project.imageurl)}
+                    src={urlFor(project?.imageurl)}
                     alt=""
                     className="w-full sm:w-[350px]  rounded-xl h-[350px] sm:h-[12rem] object-fill"
                   />
@@ -68,7 +68,7 @@ const ProjectsComponent = () => {
                         className="flex justify-center items-center gap-2 hover:bg-[rgb(255,255,255,0.2)]  transition duration-300 bg-[rgb(255,255,255,0.15)] sm:w-48 w-52 h-10 rounded-full"
                       >
                         <img
-                          src={urlFor(item.imageurl)}
+                          src={urlFor(item?.imageurl)}
                           alt=" "
                           className="w-8 h-8 rounded-full object-cover"
                         />
@@ -86,7 +86,7 @@ const ProjectsComponent = () => {
                       >
                         <p className="text-[14px]">{link.website}</p>
                         <img
-                          src={urlFor(link.imageurl)}
+                          src={urlFor(link?.imageurl)}
                           alt=""
                           className="w-16 h-4"
                         />
@@ -103,7 +103,7 @@ const ProjectsComponent = () => {
               >
                 <div className="flex-1">
                   <img
-                    src={urlFor(project.imageurl)}
+                    src={urlFor(project?.imageurl)}
                     alt=""
                     className="w-full sm:w-[350px]  rounded-xl h-[350px] sm:h-[12rem] object-fill"
                   />
@@ -115,10 +115,10 @@ const ProjectsComponent = () => {
                     {project.stacks.map((item) => (
                       <div
                         key={item._key}
-                        className="flex justify-center items-center gap-2 hover:bg-[rgb(255,255,255,0.2)]  transition duration-300 bg-[rgb(255,255,255,0.15)] sm:w-48  w-52 h-10 rounded-full"
+                        className="flex justify-center items-center gap-2 hover:bg-[rgb(255,255,255,0.2)]  transition duration-300 bg-[rgb(255,255,255,0.15)] sm:w-44  w-52 h-10 rounded-full"
                       >
                         <img
-                          src={urlFor(item.imageurl)}
+                          src={urlFor(item?.imageurl)}
                           alt=" "
                           className="w-8 h-8 rounded-full object-cover"
                         />
@@ -136,7 +136,7 @@ const ProjectsComponent = () => {
                       >
                         <p className="text-[14px]">{link.website}</p>
                         <img
-                          src={urlFor(link.imageurl)}
+                          src={urlFor(link?.imageurl)}
                           alt=""
                           className="w-16 h-4"
                         />
