@@ -17,7 +17,9 @@ const ProjectsComponent = () => {
         _createdAt: new Date(item._createdAt),
       }));
       // Sort the array by _createdAt in descending order
-      const sliceProject = response.slice(0, 3);
+      const sliceProject = sortedResponse
+        .sort((a, b) => b._createdAt - a._createdAt)
+        .slice(0, 3);
 
       sortedResponse.sort((a, b) => b._createdAt - a._createdAt);
       setProjects(sortedResponse);
@@ -31,8 +33,8 @@ const ProjectsComponent = () => {
     }
   }, []);
   return (
-    <div id="projects" className="pt-20  ">
-      <div className="flex items-center sm:gap-1  gap-3">
+    <div id="projects" aos="slide-up" className="pt-20  ">
+      <div data-aos="slide-up" className="flex items-center  sm:gap-1  gap-3">
         <div className="flex flex-col   gap-1">
           <div className="w-8 bg-white ml-2 h-[2px]" />
           <div className="w-8 bg-white h-[2px]" />

@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <div id="about" className="w-5/6 sm:w-[90%] mx-auto pt-16 ">
-      <div className="flex items-center gap-3">
+      <div data-aos="slide-up" className="flex items-center gap-3">
         <div className="flex flex-col   gap-1">
           <div className="w-8 bg-white ml-2 h-[2px]" />
           <div className="w-8 bg-white h-[2px]" />
