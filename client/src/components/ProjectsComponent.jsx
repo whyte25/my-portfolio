@@ -19,7 +19,7 @@ const ProjectsComponent = () => {
       // Sort the array by _createdAt in descending order
       const sliceProject = response.slice(0, 3);
 
-      sortedResponse.sort((a, b) => a._createdAt - b._createdAt);
+      sortedResponse.sort((a, b) => b._createdAt - a._createdAt);
       setProjects(sortedResponse);
       setProjectsSlice(sliceProject);
     });
